@@ -9,6 +9,9 @@ async function ProductList() {
 
   if (error) {
     console.error('Error al obtener los productos:', error)
+    if (error) {
+  return <div className="p-4 text-red-600 font-bold">Error de Supabase: {JSON.stringify(error)}</div>;
+}
   }
 
   return (
