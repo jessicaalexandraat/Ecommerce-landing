@@ -1,7 +1,7 @@
 import { supabase } from '@/lib/supabase'
 import Link from 'next/link'
 import { Suspense } from 'react'
-
+export const dynamic = 'force-dynamic';
 async function ProductList() {
   const { data: products, error } = await supabase
     .from('products')
